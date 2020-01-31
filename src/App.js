@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from './components/Navbar'
+import Login from "./components/Login";
+import AutoQuote from "./components/AutoQuote";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+<Nav/>
+<Switch>
+<Route exact path="/quote" component={AutoQuote}/>
+    <Route exact path="/" component={Login}/>
+</Switch>
+</Router>
   );
 }
 
