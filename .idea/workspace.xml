@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a16539-5fdb-40bb-8225-399c4ed3ed74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AutoQuote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CustomerDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RecentTransactions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VehicleDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DB/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +59,7 @@
       </list>
     </option>
   </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,7 +74,8 @@
       <workItem from="1580424787558" duration="33000" />
       <workItem from="1580424848520" duration="475000" />
       <workItem from="1580425357148" duration="3850000" />
-      <workItem from="1580489041395" duration="2536000" />
+      <workItem from="1580489041395" duration="3785000" />
+      <workItem from="1580520370470" duration="2913000" />
     </task>
     <servers />
   </component>
@@ -98,6 +90,10 @@
       <screen x="0" y="27" width="1920" height="1027" />
     </state>
     <state x="630" y="229" width="649" height="619" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1027@0.27.1920.1027" timestamp="1580424253250" />
+    <state x="749" y="411" width="411" height="256" key="Github.ShareDialog" timestamp="1580503434760">
+      <screen x="0" y="27" width="1920" height="1027" />
+    </state>
+    <state x="749" y="411" width="411" height="256" key="Github.ShareDialog/0.27.1920.1027@0.27.1920.1027" timestamp="1580503434760" />
     <state x="325" y="86" width="1269" height="906" key="SettingsEditor" timestamp="1580424819877">
       <screen x="0" y="27" width="1920" height="1027" />
     </state>

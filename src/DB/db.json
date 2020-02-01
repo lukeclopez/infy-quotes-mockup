@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "email": "admin1@admin.com",
+      "password": "admin1"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "zip": "10030",
+      "age": "23",
+      "email": "admin@admin.com",
+      "model": "Accord",
+      "manufacturer": "Honda"
+    },
+    {
+      "id": 2,
+      "zip": "10030",
+      "age": "25",
+      "email": "admin1@admin.com",
+      "model": "Accord 2",
+      "manufacturer": "Honda"
+    }
+  ]
+}
