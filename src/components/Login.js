@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {Form, Button, Jumbotron} from "react-bootstrap";
 
 const Login = () => {
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
   return(
       <React.Fragment>
           <div className="container" style={{marginTop: "50px"}}>
@@ -9,7 +13,8 @@ const Login = () => {
           <Form style={{alignContent: "center"}}>
               <Form.Group controlId="formBasicEmail">
                   <Form.Label align="left">Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" style={{width:"50%"}}  />
+                  <Form.Control value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="Enter email" style={{width:"50%"}}  />
+                  <p>{email}</p>
                   <Form.Text className="text-muted">
                       We'll never share your info with anyone else.
                   </Form.Text>
@@ -17,7 +22,8 @@ const Login = () => {
 
               <Form.Group controlId="formBasicPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" style={{width:"50%"}}/>
+                  <p>{password}</p>
+                  <Form.Control value={password} onChange={e => setPassword(e.target.value)} type="password" placeholder="Password" style={{width:"50%"}}/>
               </Form.Group>
               <Button variant="primary" type="submit" style={{alignContent: "center"}}>
                   Submit
