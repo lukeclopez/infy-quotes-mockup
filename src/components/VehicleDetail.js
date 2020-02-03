@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import {Form} from "react-bootstrap";
 
-const VehicleDetails = () => {
-    const [model, setModel] = useState("");
-    const [manufacturer, setManufacturer] = useState("");
-    const [year, setYear] = useState("");
-    const [pdate, setPdate] = useState("");
+const VehicleDetails = ({ model, setModel, manufacturer, setManufacturer, year, setYear, pdate, setPdate }) => {
     return (
         <div className="container">
             <h3 align="left">Vehicle Info</h3>

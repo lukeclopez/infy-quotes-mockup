@@ -1,11 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import {Form} from "react-bootstrap";
 
-const CustomerDetails = () => {
-    const [zip, setZip] = useState("");
-    const [dlId, setdlId] = useState("");
-    const [age, setage] = useState("");
-
+const CustomerDetails = ({zip, setZip, dlId, setDlId, age, setAge }) => {
     return (
         <div className="container">
             <h2 align="left">Auto Quote Registration</h2>
@@ -18,12 +14,12 @@ const CustomerDetails = () => {
         <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>DL ID</Form.Label>
             <p>{dlId}</p>
-            <Form.Control value={dlId} onChange={e => setdlId(e.target.value)} type="text" placeholder="DL ID" />
+            <Form.Control value={dlId} onChange={e => setDlId(e.target.value)} type="text" placeholder="DL ID" />
         </Form.Group>
         <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>Age when you got first license</Form.Label>
             <p>{age}</p>
-            <Form.Control value={age} onChange={e => setage(e.target.value)} type="number" placeholder="Age" />
+            <Form.Control value={age} onChange={e => setAge(e.target.value)} type="number" placeholder="Age" />
         </Form.Group>
     </Form>
         </div>
