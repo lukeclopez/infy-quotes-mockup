@@ -1,10 +1,18 @@
-import React, { useState, useEffect } from "react";
-import {Form, Button, Jumbotron} from "react-bootstrap";
+import React, { useState } from "react";
+import {Form, Jumbotron} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    const isAuth = () =>{
+        if (email === "admin@admin.com" && password === "admin"){
+            return "/quote"
+        }
+        console.log("not an user")
+    };
 
   return(
       <React.Fragment>
@@ -25,9 +33,9 @@ const Login = () => {
                   <p>{password}</p>
                   <Form.Control value={password} onChange={e => setPassword(e.target.value)} type="password" placeholder="Password" style={{width:"50%"}}/>
               </Form.Group>
-              <Button variant="primary" type="submit" style={{alignContent: "center"}}>
+              <Link className="btn btn-primary" onClick={isAuth()} variant="primary" style={{alignContent: "center"}}>
                   Submit
-              </Button>
+              </Link>
           </Form>
               </Jumbotron>
           </div>

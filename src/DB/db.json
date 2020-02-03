@@ -21,6 +21,14 @@
       "manufacturer": "Honda"
     },
     {
+      "id": 2,
+      "zip": "10030",
+      "age": "25",
+      "email": "admin1@admin.com",
+      "model": "Accord 2",
+      "manufacturer": "Honda"
+    },
+    {
       "id": 3,
       "zip": "50030",
       "age": "30",

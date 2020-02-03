@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-import {Button, Table} from "react-bootstrap";
+import {Table} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 const RecentTransactions = () => {
