@@ -17,7 +17,7 @@ export default {
         return axios.post("http://localhost:3000/transactions", data)
     },
     updateTransaction : (id, transactionData) => {
-        return axios.put("http://localhost:3000/transactions" + id, transactionData)
+        return axios.put("http://localhost:3000/transactions/" + id, transactionData)
     },
     deleteTransaction: (id) => {
         return axios.delete("http://localhost:3000/transactions/" + id)

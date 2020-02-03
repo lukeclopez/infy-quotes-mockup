@@ -60,7 +60,7 @@ const AllTransactions = () => {
             return data.map((i, index ) => {
                 const { age, email, id, manufacturer, model, zip } = i;
                 return(
-                    <tr key={index}>
+                    <tr key={id}>
                         <td>{zip}</td>
                         <td>{age}</td>
                         <td>{email}</td>
