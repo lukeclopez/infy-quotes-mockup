@@ -20,6 +20,6 @@ export default {
         return axios.put("http://localhost:3000/transactions" + id, data)
     },
     deleteTransaction: (id) => {
-        return axios.delete("http://localhost:3000/transactions" + id)
+        return axios.delete("http://localhost:3000/transactions/" + id)
     }
 };

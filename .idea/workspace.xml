@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a16539-5fdb-40bb-8225-399c4ed3ed74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/AllTransactions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VehicleDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VehicleDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecentTransactions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecentTransactions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,7 @@
       <workItem from="1580525184850" duration="129000" />
       <workItem from="1580525433627" duration="102000" />
       <workItem from="1580525551928" duration="301000" />
-      <workItem from="1580525868733" duration="5194000" />
+      <workItem from="1580525868733" duration="8770000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-import { Table } from "react-bootstrap";
+import {Button, Table} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const RecentTransactions = () => {
 
@@ -32,6 +33,7 @@ const RecentTransactions = () => {
     };
 
     return (
+        <React.Fragment>
         <Table striped bordered hover style={{marginTop: "20px"}}>
             <thead>
             <tr>
@@ -46,6 +48,8 @@ const RecentTransactions = () => {
             {renderTable()}
             </tbody>
         </Table>
+            <Link to="/transactions">Check all transactions</Link>
+        </React.Fragment>
     )
 };
 
