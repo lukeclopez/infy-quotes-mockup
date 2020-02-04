@@ -21,7 +21,12 @@ const Nav = () => {
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
         <Navbar.Text >
-             <Link style={{color: "#f7f7f7"}} to="/quote">Policies :: {policies.length}</Link>
+             <Link style={{color: "#f7f7f7"}} to="/new-quote">Post a quote, {"user"}</Link>
+        </Navbar.Text>
+        <div style={{width: "42px", height: "auto", display: "inline-block"}}/>
+
+        <Navbar.Text >
+            <Link style={{color: "#f7f7f7"}} to="/transactions">Policies :: {policies.length}</Link>
         </Navbar.Text>
     </Navbar.Collapse>
 </Navbar>

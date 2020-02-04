@@ -36,8 +36,23 @@
       "age": "44",
       "model": "Corolla",
       "manufacturer": "Toyota",
+<<<<<<< HEAD
       "year": "1900",
       "pdate": "2020-12-01"
+=======
+      "id": 3
+    },
+    {
+      "id": 4,
+      "zip": "34747",
+      "email": "admin@admin.com",
+      "dlId": "120",
+      "age": "22",
+      "model": "Corolla",
+      "manufacturer": "Toyota",
+      "year": "2019",
+      "pdate": "2021-03-05"
+>>>>>>> 1208eaa39e322c9d6f7e22b1a11db66f12743091
     }
   ]
 }

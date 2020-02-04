@@ -3,7 +3,7 @@ import API from "../utils/API";
 import CustomerDetail from "./CustomerDetail"
 import VehicleDetails from "./VehicleDetail";
 import RecentTransactions from "./RecentTransactions";
-import {Button} from "react-bootstrap";
+import {Button, Jumbotron} from "react-bootstrap";
 
 const AutoQuote = () => {
     const [zip, setZip] = useState("");
@@ -37,6 +37,7 @@ const AutoQuote = () => {
 return (
 
     <div className="container" style={{marginTop: "60px"}}>
+        <Jumbotron>
         <CustomerDetail zip={zip}
                         setZip={setZip}
                         dlId={dlId}
@@ -56,7 +57,8 @@ return (
         /><br/>
         <Button className="btn" onClick={handleFormSubmit}>Submit</Button>
         <RecentTransactions  />
-    </div>
+        </Jumbotron>
+        </div>
 )
 };
 
