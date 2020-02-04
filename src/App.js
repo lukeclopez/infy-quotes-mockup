@@ -9,7 +9,7 @@ function App() {
     <Router>
 <Nav/>
 <Switch>
-<Route exact path="/quote" component={AutoQuote}/>
+<Route exact path="/new-quote" component={AutoQuote}/>
     <Route exact path="/transactions" component={AllTransactions}/>
     <Route exact path="/" component={Login}/>
 </Switch>

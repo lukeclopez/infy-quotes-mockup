@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-import {Table, Modal} from "react-bootstrap";
+import {Table, Modal, Jumbotron} from "react-bootstrap";
 import EditModal from "./editModal";
 
 
@@ -120,6 +120,7 @@ const AllTransactions = () => {
 
     return (
         <div className='container'>
+            <Jumbotron>
         <Table striped bordered hover style={{marginTop: "30px", borderRadius:"10px"}}>
             <thead>
             <tr>
@@ -134,6 +135,7 @@ const AllTransactions = () => {
             {renderTable()}
             </tbody>
         </Table>
+            </Jumbotron>
         </div>
     )
 };
