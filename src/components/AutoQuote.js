@@ -55,7 +55,7 @@ return (
             setPdate={setPdate}
         /><br/>
         <Button className="btn" onClick={handleFormSubmit}>Submit</Button>
-        <RecentTransactions/>
+        <RecentTransactions  />
     </div>
 )
 };

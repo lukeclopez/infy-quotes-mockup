@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Modal} from "react-bootstrap";
-import {FaPencilAlt} from "react-icons/all";
+
 
 function EditModal(props) {
     const [show, setShow] = useState(false);
@@ -13,8 +13,8 @@ function EditModal(props) {
 
     return (
         <>
-            <span style={{cursor: "pointer", textAlign: "left", color: "#005b96"}} onClick={handleShow}>
-                <FaPencilAlt/> Edit
+            <span className="btn-primary btn btn-group-lg" onClick={handleShow}>
+                 Edit
             </span>
 
             <Modal show={show} onHide={handleClose}>

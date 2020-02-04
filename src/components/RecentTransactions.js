@@ -6,19 +6,19 @@ import {Link} from "react-router-dom";
 const RecentTransactions = () => {
 
     const [data, setData] = useState([]);
+    const loadTransactions = () => {
+        API.getTransactions()
+            .then(res => setData(res.data)
+            )
+            .catch(err => console.log(err));
+    };
 
-    useEffect(()=>{
-            API.getTransactions()
-                .then(res => setData(res.data))
-                .catch(err => console.log(err));
-        }
-        , []
-    );
+    useEffect(loadTransactions, []);
 
     const renderTable = () => {
       if(data.length){
           return data.map((i, index ) => {
-              const { age, email, id, manufacturer, model, zip } = i
+              const { age, email, id, manufacturer, model, zip } = i;
               return(
                   <tr key={id}>
                       <td>{zip}</td>

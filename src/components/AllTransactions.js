@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import {Table, Modal} from "react-bootstrap";
 import EditModal from "./editModal";
-import {FaTrash} from "react-icons/all"
+
 
 const AllTransactions = () => {
 
@@ -108,8 +108,8 @@ const AllTransactions = () => {
                                 </Modal.Footer>
                             </EditModal>
                             <div style={{width: "12px", height: "auto", display: "inline-block"}}/>
-                            <span style={{cursor: "pointer", color: "#005b96"}} onClick={()=> deleteTransaction(i.id)}>
-                                <FaTrash/> Delete
+                            <span className="btn-group-lg btn btn-danger" onClick={()=> deleteTransaction(i.id)}>
+                                 Delete
                             </span>
                         </td>
                     </tr>
