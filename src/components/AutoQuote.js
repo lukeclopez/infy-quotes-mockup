@@ -21,6 +21,7 @@ const AutoQuote = () => {
           API.postTransactions({
               id: idCounter,
               zip: zip,
+              email: "admin@admin.com",
               dlId: dlId,
               age: age,
               model: model,
@@ -54,7 +55,7 @@ return (
             setPdate={setPdate}
         /><br/>
         <Button className="btn" onClick={handleFormSubmit}>Submit</Button>
-        <RecentTransactions/>
+        <RecentTransactions  />
     </div>
 )
 };
