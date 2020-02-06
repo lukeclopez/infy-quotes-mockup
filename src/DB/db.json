@@ -24,17 +24,17 @@
       "id": 2,
       "zip": "10030",
       "age": "25",
-      "email": "admin1@admin.com",
-      "model": "Accord 2",
+      "email": "admin@admin.com",
+      "model": "Accord",
       "manufacturer": "Honda"
     },
     {
-      "zip": "50030",
-      "age": "33",
-      "email": "admin12@admin.com",
-      "model": "Corolla",
-      "manufacturer": "Toyota",
-      "id": 3
+      "id": 3,
+      "zip": "10030",
+      "age": "25",
+      "email": "admin@admin.com",
+      "model": "Accord",
+      "manufacturer": "Honda"
     }
   ]
 }

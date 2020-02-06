@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from './components/Navbar'
+import { Provider } from 'react-redux';
+import store from './store/store';
+import Nav from './components/Navbar';
 import Login from "./components/Login";
 import AutoQuote from "./components/AutoQuote";
 import AllTransactions from "./components/AllTransactions";
 function App() {
   return (
+    <Provider store={store}>
     <Router>
 <Nav/>
 <Switch>
@@ -14,6 +17,7 @@ function App() {
     <Route exact path="/" component={Login}/>
 </Switch>
 </Router>
+</Provider>
   );
 }
 

@@ -1,46 +1,71 @@
-import React, { useState } from "react";
-import {Form, Jumbotron} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { login } from '../reducers/login';
 
-const Login = () => {
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+class LoginForm extends Component {
 
-    const isAuth = () =>{
-        if (email === "admin@admin.com" && password === "admin"){
-            return "/quote"
-        }
-        console.log("not an user")
-    };
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.onSubmit = this.onSubmit.bind(this);
+  }
 
-  return(
-      <React.Fragment>
-          <div className="container" style={{marginTop: "50px"}}>
-              <Jumbotron>
-          <Form style={{alignContent: "center"}}>
-              <Form.Group controlId="formBasicEmail">
-                  <Form.Label align="left">Email address</Form.Label>
-                  <Form.Control value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="Enter email" style={{width:"50%"}}  />
-                  <p>{email}</p>
-                  <Form.Text className="text-muted">
-                      We'll never share your info with anyone else.
-                  </Form.Text>
-              </Form.Group>
-
-              <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <p>{password}</p>
-                  <Form.Control value={password} onChange={e => setPassword(e.target.value)} type="password" placeholder="Password" style={{width:"50%"}}/>
-              </Form.Group>
-              <Link className="btn btn-primary" onClick={isAuth()} variant="primary" style={{alignContent: "center"}}>
-                  Submit
-              </Link>
-          </Form>
-              </Jumbotron>
+  render() {
+    let {email, password} = this.state;
+    let {isLoginPending, isLoginSuccess, loginError} = this.props;
+    return (
+        <div className="container">
+        <div className="jumbotron" style={{alignContent: "center"}}>
+      <form name="loginForm" onSubmit={this.onSubmit}>
+        <div className="form-group-collection">
+          <div className="form-group">
+            <label>Email:</label><br/>
+            <input type="email" name="email" onChange={e => this.setState({email: e.target.value})} value={email}/>
           </div>
-      </React.Fragment>
-  )
-};
 
-export default Login
+          <div className="form-group">
+            <label>Password:</label><br/>
+            <input type="password" name="password" onChange={e => this.setState({password: e.target.value})} value={password}/>
+          </div>
+        </div>
+
+        <input className="btn btn-primary" type="submit" value="Login" />
+
+        <div className="message">
+          { isLoginPending && <div>Please wait...</div> }
+          { isLoginSuccess && <div>Success.</div> }
+          { loginError && <div>{loginError.message}</div> }
+        </div>
+      </form>
+      </div>
+      </div>
+    )
+  }
+
+  onSubmit(e) {
+    e.preventDefault();
+    let { email, password } = this.state;
+    this.props.login(email, password);
+    this.setState({
+      email: '',
+      password: ''
+    });
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    isLoginPending: state.isLoginPending,
+    isLoginSuccess: state.isLoginSuccess,
+    loginError: state.loginError
+  };
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    login: (email, password) => dispatch(login(email, password))
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);

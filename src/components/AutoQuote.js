@@ -13,6 +13,7 @@ const AutoQuote = () => {
     const [manufacturer, setManufacturer] = useState("");
     const [year, setYear] = useState("");
     const [pdate, setPdate] = useState("");
+    const [keyId, setKeyId] = useState();
 
     const idCounter = Math.floor(Math.random() * 10);
     const handleFormSubmit = e => {
@@ -29,7 +30,16 @@ const AutoQuote = () => {
               year: year,
               pdate: pdate
           })
-              .then(res => console.log(res.data))
+              .then(res => {
+                  setZip("");
+                  setDlId("");
+                  setAge("");
+                  setModel("");
+                  setManufacturer("");
+                  setYear("");
+                  setPdate("");
+                  setKeyId(res.data.id)
+              })
               .catch(err => console.log(err))
       }
     };
@@ -56,7 +66,7 @@ return (
             setPdate={setPdate}
         /><br/>
         <Button className="btn" onClick={handleFormSubmit}>Submit</Button>
-        <RecentTransactions  />
+        <RecentTransactions key={keyId} />
         </Jumbotron>
         </div>
 )
