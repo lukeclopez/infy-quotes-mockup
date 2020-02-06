@@ -35,17 +35,6 @@
       "model": "Corolla",
       "manufacturer": "Toyota",
       "id": 3
-    },
-    {
-      "id": 4,
-      "zip": "34747",
-      "email": "admin@admin.com",
-      "dlId": "120",
-      "age": "22",
-      "model": "Corolla",
-      "manufacturer": "Toyota",
-      "year": "2019",
-      "pdate": "2021-03-05"
     }
   ]
 }
